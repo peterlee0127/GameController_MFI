@@ -19,6 +19,10 @@
 		D04BB02B1921DA23004937C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04BB0131921DA23004937C7 /* UIKit.framework */; };
 		D04BB0331921DA23004937C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D04BB0311921DA23004937C7 /* InfoPlist.strings */; };
 		D04BB0351921DA23004937C7 /* GameControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D04BB0341921DA23004937C7 /* GameControllerTests.m */; };
+		D04BB0411921DA3C004937C7 /* GameControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04BB03F1921DA3C004937C7 /* GameControllerViewController.m */; };
+		D04BB0421921DA3C004937C7 /* GameControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04BB03F1921DA3C004937C7 /* GameControllerViewController.m */; };
+		D04BB0431921DA3C004937C7 /* GameControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */; };
+		D04BB0441921DA3C004937C7 /* GameControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,9 @@
 		D04BB0301921DA23004937C7 /* GameControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameControllerTests-Info.plist"; sourceTree = "<group>"; };
 		D04BB0321921DA23004937C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D04BB0341921DA23004937C7 /* GameControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameControllerTests.m; sourceTree = "<group>"; };
+		D04BB03E1921DA3C004937C7 /* GameControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameControllerViewController.h; sourceTree = "<group>"; };
+		D04BB03F1921DA3C004937C7 /* GameControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameControllerViewController.m; sourceTree = "<group>"; };
+		D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameControllerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +116,9 @@
 			children = (
 				D04BB01E1921DA23004937C7 /* AppDelegate.h */,
 				D04BB01F1921DA23004937C7 /* AppDelegate.m */,
+				D04BB03E1921DA3C004937C7 /* GameControllerViewController.h */,
+				D04BB03F1921DA3C004937C7 /* GameControllerViewController.m */,
+				D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */,
 				D04BB0211921DA23004937C7 /* Images.xcassets */,
 				D04BB0161921DA23004937C7 /* Supporting Files */,
 			);
@@ -191,6 +201,17 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Peterlee;
 				TargetAttributes = {
+					D04BB00B1921DA23004937C7 = {
+						DevelopmentTeam = AWP2538424;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+						};
+					};
 					D04BB0261921DA23004937C7 = {
 						TestTargetID = D04BB00B1921DA23004937C7;
 					};
@@ -220,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D04BB01A1921DA23004937C7 /* InfoPlist.strings in Resources */,
+				D04BB0431921DA3C004937C7 /* GameControllerViewController.xib in Resources */,
 				D04BB0221921DA23004937C7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04BB0441921DA3C004937C7 /* GameControllerViewController.xib in Resources */,
 				D04BB0331921DA23004937C7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04BB0411921DA3C004937C7 /* GameControllerViewController.m in Sources */,
 				D04BB0201921DA23004937C7 /* AppDelegate.m in Sources */,
 				D04BB01C1921DA23004937C7 /* main.m in Sources */,
 			);
@@ -248,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04BB0421921DA3C004937C7 /* GameControllerViewController.m in Sources */,
 				D04BB0351921DA23004937C7 /* GameControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,10 +382,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GameController/GameController-Prefix.pch";
 				INFOPLIST_FILE = "GameController/GameController-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -370,10 +398,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GameController/GameController-Prefix.pch";
 				INFOPLIST_FILE = "GameController/GameController-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -437,6 +468,7 @@
 				D04BB03A1921DA23004937C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D04BB03B1921DA23004937C7 /* Build configuration list for PBXNativeTarget "GameControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +477,7 @@
 				D04BB03D1921DA23004937C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

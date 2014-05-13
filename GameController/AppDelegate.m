@@ -7,12 +7,19 @@
 //
 
 #import "AppDelegate.h"
+#import "GameControllerViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    GameControllerViewController *gameControllerVC=[[GameControllerViewController alloc] initWithNibName:@"GameControllerViewController" bundle:nil];
+    
+    UINavigationController *navVC=[[UINavigationController alloc] initWithRootViewController:gameControllerVC];
+    
+    self.window.rootViewController=navVC;
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
