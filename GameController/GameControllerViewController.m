@@ -33,7 +33,11 @@
         [[GCController controllers] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             GCController *controller=(GCController *)obj;
             NSLog(@"discover:%@ %@",controller.vendorName,controller.gamepad);
+            self.title=[NSString stringWithFormat:@"Avaiable:%@",controller.vendorName];
+            if(stop)
+                [GCController stopWirelessControllerDiscovery];
         }];
+        
     }];
     
     GCExtendedGamepad *profile = self.gameController.extendedGamepad;
