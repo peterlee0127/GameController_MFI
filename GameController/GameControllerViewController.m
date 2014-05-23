@@ -26,34 +26,76 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title=@"Avaiable Controllers";
-    
+
+
+    // Do any additional setup after loading the view from its nib.
+}
+-(void)viewWillAppear:(BOOL)animated
+{
     [GCController startWirelessControllerDiscoveryWithCompletionHandler:^{
-       
+        
         [[GCController controllers] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             GCController *controller=(GCController *)obj;
-            NSLog(@"discover:%@ %@",controller.vendorName,controller.gamepad);
+            NSLog(@"discover vendorName:%@ gamepad:%@ playerIndex:%ld",controller.vendorName,controller.gamepad,controller.playerIndex);
         }];
+        
     }];
+
     
+    GCGamepad *pad = self.gameController.gamepad;
+    pad.buttonA.valueChangedHandler =  ^(GCControllerButtonInput *button, float value, BOOL pressed)
+    {
+        NSLog(@"buttonA:%d",pressed);
+    };
+
+    pad.buttonB.valueChangedHandler =  ^(GCControllerButtonInput *button, float value, BOOL pressed)
+    {
+        NSLog(@"buttonB:%d",pressed);
+    };
+    
+    pad.buttonX.valueChangedHandler =  ^(GCControllerButtonInput *button, float value, BOOL pressed)
+    {
+        NSLog(@"buttonX:%d",pressed);
+    };
+    
+    pad.buttonY.valueChangedHandler =  ^(GCControllerButtonInput *button, float value, BOOL pressed)
+    {
+        NSLog(@"buttonY:%d",pressed);
+    };
+    
+    
+    
+    
+
     GCExtendedGamepad *profile = self.gameController.extendedGamepad;
     profile.rightTrigger.valueChangedHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
     {
-        if (pressed)
-        {
-            NSLog(@"rightTrigger:%@,Value:%f,Pressed:%d",button,value,pressed);
-        }
-          
+        NSLog(@"rightTrigger:%@,Value:%f,Pressed:%d",button,value,pressed);
     };
     profile.leftTrigger.valueChangedHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
     {
-        if (pressed)
-        {
-            NSLog(@"leftTrigger:%@,Value:%f,Pressed:%d",button,value,pressed);
-        }
+        NSLog(@"leftTrigger:%@,Value:%f,Pressed:%d",button,value,pressed);
     };
-
-    // Do any additional setup after loading the view from its nib.
+    
+    
+    profile.leftThumbstick.valueChangedHandler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
+    {
+        NSLog(@"leftThumbStick:%@,xValue:%f,yValue:%f",dpad,xValue,yValue);
+    };
+    profile.rightThumbstick.valueChangedHandler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
+    {
+        NSLog(@"rightThumbStick:%@,xValue:%f,yValue:%f",dpad,xValue,yValue);
+    };
+    
+    
+    profile.leftShoulder.valueChangedHandler= ^ (GCControllerButtonInput *button, float value, BOOL pressed)
+    {
+        NSLog(@"leftShoulder:%@,Value:%f,Pressed:%d",button,value,pressed);
+    };
+    profile.rightShoulder.valueChangedHandler= ^ (GCControllerButtonInput *button, float value, BOOL pressed)
+    {
+        NSLog(@"rightShoulder:%@,Value:%f,Pressed:%d",button,value,pressed);
+    };
 }
 
 

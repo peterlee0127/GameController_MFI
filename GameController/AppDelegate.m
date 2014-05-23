@@ -15,10 +15,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     GameControllerViewController *gameControllerVC=[[GameControllerViewController alloc] initWithNibName:@"GameControllerViewController" bundle:nil];
+
     
-    UINavigationController *navVC=[[UINavigationController alloc] initWithRootViewController:gameControllerVC];
-    
-    self.window.rootViewController=navVC;
+    self.window.rootViewController=gameControllerVC;
     
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
