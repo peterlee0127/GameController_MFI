@@ -26,9 +26,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(controllerDidConnect) name:GCControllerDidConnectNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(controllerDisConnect) name:GCControllerDidDisconnectNotification object:nil];
+    
 
     // Do any additional setup after loading the view from its nib.
+}
+-(void) controllerDidConnect
+{
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+}
+-(void) controllerDisConnect
+{
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -97,7 +108,6 @@
         NSLog(@"rightShoulder:%@,Value:%f,Pressed:%d",button,value,pressed);
     };
 }
-
 
 
 @end
