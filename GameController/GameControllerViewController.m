@@ -36,6 +36,8 @@
 -(void) controllerDidConnect
 {
     NSLog(@"%s",__PRETTY_FUNCTION__);
+
+
 }
 -(void) controllerDisConnect
 {
@@ -43,8 +45,7 @@
 }
 -(void)viewWillAppear:(BOOL)animated
 {
-    self.gameController=[[GCController alloc] init];
-    
+
     [GCController startWirelessControllerDiscoveryWithCompletionHandler:^{
         
         [[GCController controllers] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
