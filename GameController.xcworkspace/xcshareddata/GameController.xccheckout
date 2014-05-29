@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B56326C8-3423-4851-8663-E4A6C293E121</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GameController</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>32811B55-D47A-4880-871C-1F7D698FE940</key>
+		<string>https://github.com/peterlee0127/GameController_MFI.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GameController.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>32811B55-D47A-4880-871C-1F7D698FE940</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/peterlee0127/GameController_MFI.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>32811B55-D47A-4880-871C-1F7D698FE940</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>32811B55-D47A-4880-871C-1F7D698FE940</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GameController</string>
+		</dict>
+	</array>
+</dict>
+</plist>
