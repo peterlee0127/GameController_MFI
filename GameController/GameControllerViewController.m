@@ -7,6 +7,7 @@
 //
 
 #import "GameControllerViewController.h"
+#import "InfoViewController.h"
 
 
 @interface GameControllerViewController ()
@@ -30,15 +31,15 @@
 {
     [super viewDidLoad];
     
-    self.activityAlertView=[[UIView alloc] initWithFrame:CGRectMake(self.view.frame.size.height/2-50, 60, 360, 160)];
+    self.activityAlertView=[[UIView alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2- 210, 60, 420, 160)];
     self.activityAlertView.alpha=0.9;
     
-    UITextView *waitLabel =[[UITextView alloc] initWithFrame:CGRectMake(self.activityAlertView.frame.origin.y-30, 30, 300, 160)];
+    UITextView *waitLabel =[[UITextView alloc] initWithFrame:CGRectMake(self.activityAlertView.frame.origin.y-30, 0, 380, 160)];
     waitLabel.textAlignment=NSTextAlignmentLeft;
     waitLabel.userInteractionEnabled=NO;
     waitLabel.backgroundColor=[UIColor clearColor];
-    waitLabel.text=@"Loading your controller Information, it will take 30 seconds";
-    waitLabel.font=[UIFont fontWithName:@"Arial" size:28];
+    waitLabel.text=@"Loading your controller Information, it will take 30 seconds.\n(please ensure already connect game controller)";
+    waitLabel.font=[UIFont fontWithName:@"Helvetica" size:24];
     [self.activityAlertView addSubview:waitLabel];
     
     self.activityAlertView.backgroundColor=[UIColor whiteColor];
@@ -48,6 +49,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(controllerDidConnect) name:GCControllerDidConnectNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(controllerDisConnect) name:GCControllerDidDisconnectNotification object:nil];
     
+    [self.infoButton addTarget:self action:@selector(showInfoVC) forControlEvents:UIControlEventTouchDown];
 
     // Do any additional setup after loading the view from its nib.
 }
@@ -149,11 +151,10 @@
         NSLog(@"startWirelessControllerDiscoveryWithCompletionHandler");
     }];
 }
--(void)viewWillAppear:(BOOL)animated
+-(void) showInfoVC
 {
-
-    
-    
+    InfoViewController *infoVC=[[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil];
+    [self presentViewController:infoVC animated:YES completion:nil];
 }
 
 
