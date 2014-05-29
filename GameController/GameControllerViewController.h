@@ -31,4 +31,7 @@
 @property (nonatomic,strong) IBOutlet UIButton *r1Button;
 @property (nonatomic,strong) IBOutlet UIButton *r2Button;
 
+
+@property (nonatomic,strong) IBOutlet UIButton *infoButton;
+
 @end

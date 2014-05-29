@@ -23,6 +23,8 @@
 		D04BB0421921DA3C004937C7 /* GameControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04BB03F1921DA3C004937C7 /* GameControllerViewController.m */; };
 		D04BB0431921DA3C004937C7 /* GameControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */; };
 		D04BB0441921DA3C004937C7 /* GameControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */; };
+		D06047DC1935DD45006DFA1A /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06047DA1935DD45006DFA1A /* InfoViewController.m */; };
+		D06047DD1935DD45006DFA1A /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D06047DB1935DD45006DFA1A /* InfoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		D04BB03E1921DA3C004937C7 /* GameControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameControllerViewController.h; sourceTree = "<group>"; };
 		D04BB03F1921DA3C004937C7 /* GameControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameControllerViewController.m; sourceTree = "<group>"; };
 		D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameControllerViewController.xib; sourceTree = "<group>"; };
+		D06047D91935DD45006DFA1A /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		D06047DA1935DD45006DFA1A /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		D06047DB1935DD45006DFA1A /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,9 @@
 				D04BB03E1921DA3C004937C7 /* GameControllerViewController.h */,
 				D04BB03F1921DA3C004937C7 /* GameControllerViewController.m */,
 				D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */,
+				D06047D91935DD45006DFA1A /* InfoViewController.h */,
+				D06047DA1935DD45006DFA1A /* InfoViewController.m */,
+				D06047DB1935DD45006DFA1A /* InfoViewController.xib */,
 				D04BB0211921DA23004937C7 /* Images.xcassets */,
 				D04BB0161921DA23004937C7 /* Supporting Files */,
 			);
@@ -242,6 +250,7 @@
 			files = (
 				D04BB01A1921DA23004937C7 /* InfoPlist.strings in Resources */,
 				D04BB0431921DA3C004937C7 /* GameControllerViewController.xib in Resources */,
+				D06047DD1935DD45006DFA1A /* InfoViewController.xib in Resources */,
 				D04BB0221921DA23004937C7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +273,7 @@
 			files = (
 				D04BB0411921DA3C004937C7 /* GameControllerViewController.m in Sources */,
 				D04BB0201921DA23004937C7 /* AppDelegate.m in Sources */,
+				D06047DC1935DD45006DFA1A /* InfoViewController.m in Sources */,
 				D04BB01C1921DA23004937C7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,7 @@
                 <outlet property="buttonX" destination="0GR-dk-23H" id="iIs-HX-3qm"/>
                 <outlet property="buttonY" destination="ZhH-Cr-cLy" id="T2K-oz-stP"/>
                 <outlet property="downBtton" destination="HMU-sq-EJA" id="VF4-Ip-5Ob"/>
+                <outlet property="infoButton" destination="nNH-Lk-pXK" id="9ac-r2-2h1"/>
                 <outlet property="l1Button" destination="izk-H8-azD" id="604-y2-QDf"/>
                 <outlet property="l2Button" destination="K91-U5-Ns9" id="bl2-86-aNn"/>
                 <outlet property="leftButton" destination="Sbx-1r-4T5" id="KEg-1L-F83"/>
@@ -188,6 +189,13 @@
                     <rect key="frame" x="290" y="247" width="65" height="67"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" image="mushroom">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="nNH-Lk-pXK">
+                    <rect key="frame" x="526" y="29" width="22" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
