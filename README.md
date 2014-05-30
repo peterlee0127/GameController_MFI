@@ -5,6 +5,9 @@
 
 
 <hr>
+
+<h3>Library</h3>
+     FXBlurView
    
 <h3>Framework:</h3>
     GameController

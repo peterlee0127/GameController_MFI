@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FXBlurView.h>
 
 @interface InfoViewController : UIViewController
+
+
+@property (nonatomic,strong) FXBlurView *blurView;
 
 @end

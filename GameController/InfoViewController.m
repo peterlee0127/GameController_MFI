@@ -26,6 +26,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor=[UIColor clearColor];
+    
+    self.blurView=[[FXBlurView alloc] initWithFrame:self.view.frame];
+    self.blurView.blurEnabled=YES;
+    self.blurView.tintColor=[UIColor clearColor];
+    self.blurView.blurRadius=12;
+    self.blurView.iterations=3;
+    self.blurView.dynamic=NO;
+    [self.view addSubview:self.blurView];
+    [self.view sendSubviewToBack:self.blurView];
+    
+    UIImageView *imageView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"screen"]];
+    imageView.frame=self.view.frame;
+    [self.view addSubview:imageView];
+    [self.view sendSubviewToBack:imageView];
     // Do any additional setup after loading the view from its nib.
 }
 
