@@ -8,10 +8,12 @@
 
 #import "GameControllerViewController.h"
 #import "InfoViewController.h"
+#import <CoreBluetooth/CoreBluetooth.h>
 
 
-@interface GameControllerViewController ()
+@interface GameControllerViewController () <CBCentralManagerDelegate>
 
+@property (nonatomic,strong) CBCentralManager *centralManager;
 @property (nonatomic,strong) UIView *activityAlertView;
 
 @end
@@ -24,6 +26,18 @@
     if (self) {
         // Custom initialization
     }
+    return self;
+}
+- (id) init
+{
+    self = [super init];
+    if(self)
+    {
+        self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_main_queue() ];
+        [self.centralManager scanForPeripheralsWithServices:nil options:@{CBCentralManagerScanOptionAllowDuplicatesKey: @YES}];
+        NSLog(@"%ld",self.centralManager.state);
+    }
+
     return self;
 }
 
@@ -45,6 +59,7 @@
     self.activityAlertView.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:self.activityAlertView];
 
+   
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(controllerDidConnect) name:GCControllerDidConnectNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(controllerDisConnect) name:GCControllerDidDisconnectNotification object:nil];
@@ -53,6 +68,35 @@
 
     // Do any additional setup after loading the view from its nib.
 }
+
+#pragma mark - CentrolManager Delegate
+-(void)centralManagerDidUpdateState:(CBCentralManager *)central
+{
+    // Determine the state of the peripheral
+    if ([central state] == CBCentralManagerStatePoweredOff) {
+        NSLog(@"CoreBluetooth BLE hardware is powered off");
+    }
+    else if ([central state] == CBCentralManagerStatePoweredOn) {
+        NSLog(@"CoreBluetooth BLE hardware is powered on and ready");
+        [central scanForPeripheralsWithServices:nil options:nil];
+    }
+    else if ([central state] == CBCentralManagerStateUnauthorized) {
+        NSLog(@"CoreBluetooth BLE state is unauthorized");
+    }
+    else if ([central state] == CBCentralManagerStateUnknown) {
+        NSLog(@"CoreBluetooth BLE state is unknown");
+    }
+    else if ([central state] == CBCentralManagerStateUnsupported) {
+        NSLog(@"CoreBluetooth BLE hardware is unsupported on this platform");
+    }
+    printf("%ld",central.state);
+}
+-(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
+{
+     NSLog(@"Discovered %@", peripheral.name);
+}
+
+#pragma mark - Notification Center
 -(void) controllerDidConnect
 {
     NSLog(@"%s",__PRETTY_FUNCTION__);
