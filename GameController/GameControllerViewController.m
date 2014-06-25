@@ -28,18 +28,7 @@
     }
     return self;
 }
-- (id) init
-{
-    self = [super init];
-    if(self)
-    {
-        self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_main_queue() ];
-        [self.centralManager scanForPeripheralsWithServices:nil options:@{CBCentralManagerScanOptionAllowDuplicatesKey: @YES}];
-        NSLog(@"%ld",self.centralManager.state);
-    }
 
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -58,8 +47,9 @@
     
     self.activityAlertView.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:self.activityAlertView];
-
-   
+    
+    self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_main_queue() ];
+    
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(controllerDidConnect) name:GCControllerDidConnectNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(controllerDisConnect) name:GCControllerDidDisconnectNotification object:nil];
