@@ -26,6 +26,9 @@
 @property (nonatomic,strong) IBOutlet UIButton *buttonY;
 
 
+@property (nonatomic,strong) IBOutlet UIButton *leftThumbStickButton;
+@property (nonatomic,strong) IBOutlet UIButton *rightThumbStickButton;
+
 @property (nonatomic,strong) IBOutlet UIButton *l1Button;
 @property (nonatomic,strong) IBOutlet UIButton *l2Button;
 @property (nonatomic,strong) IBOutlet UIButton *r1Button;
