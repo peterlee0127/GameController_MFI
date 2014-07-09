@@ -14,7 +14,9 @@
 @interface GameControllerViewController () <CBCentralManagerDelegate>
 
 @property (nonatomic,strong) CBCentralManager *centralManager;
-@property (nonatomic,strong) UIView *activityAlertView;
+@property (nonatomic,strong) UIView *statusView;
+@property (nonatomic,assign) CGPoint leftThumbStickPoint;
+@property (nonatomic,assign) CGPoint rightThumbStickPoint;
 
 @end
 
@@ -44,22 +46,24 @@
 {
     [super viewDidLoad];
     
-    self.activityAlertView=[[UIView alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2- 210, 60, 420, 160)];
-    self.activityAlertView.alpha=0.9;
+    self.statusView=[[UIView alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2- 210, 70, 420, 160)];
+    self.statusView.alpha=0.9;
     
-    UITextView *waitLabel =[[UITextView alloc] initWithFrame:CGRectMake(self.activityAlertView.frame.origin.y-30, 0, 380, 160)];
+    UITextView *waitLabel =[[UITextView alloc] initWithFrame:CGRectMake(self.statusView.frame.origin.y-30, 0, 380, 160)];
     waitLabel.textAlignment=NSTextAlignmentLeft;
     waitLabel.userInteractionEnabled=NO;
     waitLabel.backgroundColor=[UIColor clearColor];
-    waitLabel.text=@"Loading your controller Information,it will take few seconds.\n(please ensure already connected to MFi Controller)";
-    waitLabel.font=[UIFont fontWithName:@"Helvetica" size:24];
-    [self.activityAlertView addSubview:waitLabel];
+    waitLabel.text=@"Loading your controller Information,it will take few seconds.\n(Please ensure already connected to MFi Controller)";
+    waitLabel.font=[UIFont fontWithName:@"Helvetica" size:22];
+    [self.statusView addSubview:waitLabel];
     
-    self.activityAlertView.backgroundColor=[UIColor whiteColor];
-    [self.view addSubview:self.activityAlertView];
+    self.statusView.backgroundColor=[UIColor whiteColor];
+    [self.view addSubview:self.statusView];
     
     self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_main_queue() ];
     
+    self.leftThumbStickPoint = self.leftThumbStickButton.frame.origin;
+    self.rightThumbStickPoint = self.rightThumbStickButton.frame.origin;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(controllerDidConnect) name:GCControllerDidConnectNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(controllerDisConnect) name:GCControllerDidDisconnectNotification object:nil];
@@ -110,7 +114,7 @@
         self.gameController =controller;
         NSLog(@"discover vendorName:%@ attrached:%d  gamepad:%@ playerIndex:%ld"
               ,controller.vendorName,controller.attachedToDevice,controller.gamepad,(long)controller.playerIndex);
-        [self.activityAlertView removeFromSuperview];
+        [self.statusView removeFromSuperview];
         
         GCGamepad *pad = self.gameController.gamepad;
         pad.buttonA.valueChangedHandler =  ^(GCControllerButtonInput *button, float value, BOOL pressed)
@@ -151,10 +155,14 @@
         extendPad.leftThumbstick.valueChangedHandler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
         {
             NSLog(@"leftThumbStick:%@,xValue:%f,yValue:%f",dpad,xValue,yValue);
+            self.leftThumbStickButton.frame = CGRectMake(xValue*20, yValue*20,self.leftThumbStickButton.frame.size.width,self.leftThumbStickButton.frame.size.height);
+            
         };
         extendPad.rightThumbstick.valueChangedHandler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
         {
             NSLog(@"rightThumbStick:%@,xValue:%f,yValue:%f",dpad,xValue,yValue);
+            self.rightThumbStickButton.frame = CGRectMake(xValue*20, yValue*20,self.rightThumbStickButton.frame.size.width,self.rightThumbStickButton.frame.size.height);
+
         };
         extendPad.leftShoulder.valueChangedHandler= ^ (GCControllerButtonInput *button, float value, BOOL pressed)
         {

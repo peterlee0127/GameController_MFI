@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="14A261i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="14A283o" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -15,9 +15,11 @@
                 <outlet property="l1Button" destination="izk-H8-azD" id="604-y2-QDf"/>
                 <outlet property="l2Button" destination="K91-U5-Ns9" id="bl2-86-aNn"/>
                 <outlet property="leftButton" destination="Sbx-1r-4T5" id="KEg-1L-F83"/>
+                <outlet property="leftThumbStickButton" destination="YUl-y6-tX9" id="oD4-Cj-S1T"/>
                 <outlet property="r1Button" destination="kdg-qk-Wki" id="mMV-1U-0GK"/>
                 <outlet property="r2Button" destination="5Um-fM-fbn" id="bXX-aY-cpR"/>
                 <outlet property="rightButton" destination="gCz-EE-qxB" id="sxn-hP-j5c"/>
+                <outlet property="rightThumbStickButton" destination="UHh-St-w8g" id="oEy-yf-LU6"/>
                 <outlet property="upButton" destination="r8w-sj-ZZ5" id="xhR-ls-f7t"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
