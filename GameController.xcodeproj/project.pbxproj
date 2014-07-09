@@ -25,6 +25,7 @@
 		D04BB0441921DA3C004937C7 /* GameControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */; };
 		D06047DC1935DD45006DFA1A /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06047DA1935DD45006DFA1A /* InfoViewController.m */; };
 		D06047DD1935DD45006DFA1A /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D06047DB1935DD45006DFA1A /* InfoViewController.xib */; };
+		D0ADA3C9195D4D6100F4CD04 /* GameControllerViewController_35.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0ADA3C8195D4D6100F4CD04 /* GameControllerViewController_35.xib */; };
 		D0FE8BAF193727AB00E85023 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0FE8BAE193727AB00E85023 /* Settings.bundle */; };
 		DBB8109470AA4D9B814228C8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 709467BE73B743BDB0590EDF /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		D06047D91935DD45006DFA1A /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		D06047DA1935DD45006DFA1A /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		D06047DB1935DD45006DFA1A /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		D0ADA3C8195D4D6100F4CD04 /* GameControllerViewController_35.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameControllerViewController_35.xib; sourceTree = "<group>"; };
 		D0FE8BAE193727AB00E85023 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D03BB772196CE9FE00534EF8 /* GamerController */ = {
+			isa = PBXGroup;
+			children = (
+				D04BB03E1921DA3C004937C7 /* GameControllerViewController.h */,
+				D04BB03F1921DA3C004937C7 /* GameControllerViewController.m */,
+				D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */,
+				D0ADA3C8195D4D6100F4CD04 /* GameControllerViewController_35.xib */,
+			);
+			name = GamerController;
+			sourceTree = "<group>";
+		};
 		D04BB0031921DA23004937C7 = {
 			isa = PBXGroup;
 			children = (
@@ -129,9 +142,7 @@
 			children = (
 				D04BB01E1921DA23004937C7 /* AppDelegate.h */,
 				D04BB01F1921DA23004937C7 /* AppDelegate.m */,
-				D04BB03E1921DA3C004937C7 /* GameControllerViewController.h */,
-				D04BB03F1921DA3C004937C7 /* GameControllerViewController.m */,
-				D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */,
+				D03BB772196CE9FE00534EF8 /* GamerController */,
 				D06047D91935DD45006DFA1A /* InfoViewController.h */,
 				D06047DA1935DD45006DFA1A /* InfoViewController.m */,
 				D06047DB1935DD45006DFA1A /* InfoViewController.xib */,
@@ -261,6 +272,7 @@
 			files = (
 				D04BB01A1921DA23004937C7 /* InfoPlist.strings in Resources */,
 				D04BB0431921DA3C004937C7 /* GameControllerViewController.xib in Resources */,
+				D0ADA3C9195D4D6100F4CD04 /* GameControllerViewController_35.xib in Resources */,
 				D0FE8BAF193727AB00E85023 /* Settings.bundle in Resources */,
 				D06047DD1935DD45006DFA1A /* InfoViewController.xib in Resources */,
 				D04BB0221921DA23004937C7 /* Images.xcassets in Resources */,

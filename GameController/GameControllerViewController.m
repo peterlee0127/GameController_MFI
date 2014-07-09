@@ -22,8 +22,18 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    NSString *nibName = @"";
+    if([UIScreen mainScreen].bounds.size.height==480)
+    {
+        nibName = @"GameControllerViewController_35";
+    }
+    else
+    {
+        nibName = @"GameControllerViewController";
+    }
+    self=[super initWithNibName:nibName bundle:nil];
     if (self) {
+   
         // Custom initialization
     }
     return self;
@@ -68,7 +78,7 @@
     }
     else if ([central state] == CBCentralManagerStatePoweredOn) {
         NSLog(@"CoreBluetooth BLE hardware is powered on and ready");
-        [central scanForPeripheralsWithServices:nil options:nil];
+//        [central scanForPeripheralsWithServices:nil options:nil];
     }
     else if ([central state] == CBCentralManagerStateUnauthorized) {
         NSLog(@"CoreBluetooth BLE state is unauthorized");
@@ -79,7 +89,6 @@
     else if ([central state] == CBCentralManagerStateUnsupported) {
         NSLog(@"CoreBluetooth BLE hardware is unsupported on this platform");
     }
-    printf("%ld",central.state);
 }
 -(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
 {
@@ -89,37 +98,30 @@
 #pragma mark - Notification Center
 -(void) controllerDidConnect
 {
-    NSLog(@"%s",__PRETTY_FUNCTION__);
-
     [[GCController controllers] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         GCController *controller=(GCController *)obj;
         self.gameController =controller;
-        NSLog(@"discover vendorName:%@ attrached:%d  gamepad:%@ playerIndex:%ld",controller.vendorName,controller.attachedToDevice,controller.gamepad,(long)controller.playerIndex);
-        
+        NSLog(@"discover vendorName:%@ attrached:%d  gamepad:%@ playerIndex:%ld"
+              ,controller.vendorName,controller.attachedToDevice,controller.gamepad,(long)controller.playerIndex);
         [self.activityAlertView removeFromSuperview];
-        
         
         GCGamepad *pad = self.gameController.gamepad;
         pad.buttonA.valueChangedHandler =  ^(GCControllerButtonInput *button, float value, BOOL pressed)
         {
             [self.buttonA setHighlighted:pressed];
         };
-        
         pad.buttonB.valueChangedHandler =  ^(GCControllerButtonInput *button, float value, BOOL pressed)
         {
             [self.buttonB setHighlighted:pressed];
         };
-        
         pad.buttonX.valueChangedHandler =  ^(GCControllerButtonInput *button, float value, BOOL pressed)
         {
             [self.buttonX setHighlighted:pressed];
         };
-        
         pad.buttonY.valueChangedHandler =  ^(GCControllerButtonInput *button, float value, BOOL pressed)
         {
             [self.buttonY setHighlighted:pressed];
         };
-        
         pad.dpad.up.valueChangedHandler =  ^(GCControllerButtonInput *button, float value, BOOL pressed)
         {
             [self.upButton setHighlighted:pressed];
@@ -138,49 +140,37 @@
         };
         
         
-        
-        GCExtendedGamepad *profile = self.gameController.extendedGamepad;
-        
-        
-        profile.leftThumbstick.valueChangedHandler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
+        GCExtendedGamepad *extendPad = self.gameController.extendedGamepad;
+        extendPad.leftThumbstick.valueChangedHandler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
         {
             NSLog(@"leftThumbStick:%@,xValue:%f,yValue:%f",dpad,xValue,yValue);
         };
-        profile.rightThumbstick.valueChangedHandler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
+        extendPad.rightThumbstick.valueChangedHandler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
         {
             NSLog(@"rightThumbStick:%@,xValue:%f,yValue:%f",dpad,xValue,yValue);
         };
-        
-        
-        profile.leftShoulder.valueChangedHandler= ^ (GCControllerButtonInput *button, float value, BOOL pressed)
+        extendPad.leftShoulder.valueChangedHandler= ^ (GCControllerButtonInput *button, float value, BOOL pressed)
         {
             [self.l1Button setHighlighted:pressed];
         };
-        profile.rightShoulder.valueChangedHandler= ^ (GCControllerButtonInput *button, float value, BOOL pressed)
+        extendPad.rightShoulder.valueChangedHandler= ^ (GCControllerButtonInput *button, float value, BOOL pressed)
         {
             [self.r1Button setHighlighted:pressed];
         };
-        
-        profile.rightTrigger.valueChangedHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
+        extendPad.rightTrigger.valueChangedHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
         {
             [self.r2Button setHighlighted:pressed];
         };
-        profile.leftTrigger.valueChangedHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
+        extendPad.leftTrigger.valueChangedHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed)
         {
             [self.l2Button setHighlighted:pressed];
         };
-        
-        
-        
     }];
 
 
 }
 -(void) controllerDisConnect
 {
-    NSLog(@"%s",__PRETTY_FUNCTION__);
-    
-    
     [GCController startWirelessControllerDiscoveryWithCompletionHandler:^{
         NSLog(@"startWirelessControllerDiscoveryWithCompletionHandler");
     }];
