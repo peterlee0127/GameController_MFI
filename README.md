@@ -1,6 +1,6 @@
-<h1>GameController (MFi) iOS 7</h1>
+<h1>GameController (MFi) iOS 7 or later.</h1>
 
-<h3>Currnent only test wireless SteelSeries GameController</h3>
+<h3>Currnent only test wireless SteelSeries GameController.</h3>
 
 <hr>
 <img src="screen.png" height=320>
