@@ -154,14 +154,12 @@
         GCExtendedGamepad *extendPad = self.gameController.extendedGamepad;
         extendPad.leftThumbstick.valueChangedHandler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
         {
-            NSLog(@"leftThumbStick:%@,xValue:%f,yValue:%f",dpad,xValue,yValue);
-            self.leftThumbStickButton.frame = CGRectMake(xValue*20, yValue*20,self.leftThumbStickButton.frame.size.width,self.leftThumbStickButton.frame.size.height);
+            self.leftThumbStickButton.frame = CGRectMake(xValue*15+self.leftThumbStickPoint.x, self.leftThumbStickPoint.y-yValue*15,self.leftThumbStickButton.frame.size.width,self.leftThumbStickButton.frame.size.height);
             
         };
         extendPad.rightThumbstick.valueChangedHandler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue)
         {
-            NSLog(@"rightThumbStick:%@,xValue:%f,yValue:%f",dpad,xValue,yValue);
-            self.rightThumbStickButton.frame = CGRectMake(xValue*20, yValue*20,self.rightThumbStickButton.frame.size.width,self.rightThumbStickButton.frame.size.height);
+            self.rightThumbStickButton.frame = CGRectMake(xValue*15+self.rightThumbStickPoint.x, self.rightThumbStickPoint.y-yValue*15,self.rightThumbStickButton.frame.size.width,self.rightThumbStickButton.frame.size.height);
 
         };
         extendPad.leftShoulder.valueChangedHandler= ^ (GCControllerButtonInput *button, float value, BOOL pressed)
