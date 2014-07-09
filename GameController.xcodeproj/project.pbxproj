@@ -1,1176 +1,554 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>596C4563A247456FB167B2A4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>709467BE73B743BDB0590EDF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A6955475F4494EA89157985D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>D04BB0031921DA23004937C7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D04BB0151921DA23004937C7</string>
-				<string>D04BB02E1921DA23004937C7</string>
-				<string>D04BB00E1921DA23004937C7</string>
-				<string>D04BB00D1921DA23004937C7</string>
-				<string>596C4563A247456FB167B2A4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB0041921DA23004937C7</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Peterlee</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>D04BB00B1921DA23004937C7</key>
-					<dict>
-						<key>DevelopmentTeam</key>
-						<string>AWP2538424</string>
-						<key>SystemCapabilities</key>
-						<dict>
-							<key>com.apple.BackgroundModes</key>
-							<dict>
-								<key>enabled</key>
-								<string>1</string>
-							</dict>
-							<key>com.apple.GameCenter</key>
-							<dict>
-								<key>enabled</key>
-								<string>0</string>
-							</dict>
-						</dict>
-					</dict>
-					<key>D04BB0261921DA23004937C7</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>D04BB00B1921DA23004937C7</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>D04BB0071921DA23004937C7</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>D04BB0031921DA23004937C7</string>
-			<key>productRefGroup</key>
-			<string>D04BB00D1921DA23004937C7</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>D04BB00B1921DA23004937C7</string>
-				<string>D04BB0261921DA23004937C7</string>
-			</array>
-		</dict>
-		<key>D04BB0071921DA23004937C7</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D04BB0361921DA23004937C7</string>
-				<string>D04BB0371921DA23004937C7</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D04BB0081921DA23004937C7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D04BB0411921DA3C004937C7</string>
-				<string>D04BB0201921DA23004937C7</string>
-				<string>D06047DC1935DD45006DFA1A</string>
-				<string>D04BB01C1921DA23004937C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D04BB0091921DA23004937C7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D04BB0121921DA23004937C7</string>
-				<string>D04BB0141921DA23004937C7</string>
-				<string>D04BB0101921DA23004937C7</string>
-				<string>DBB8109470AA4D9B814228C8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D04BB00A1921DA23004937C7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D04BB01A1921DA23004937C7</string>
-				<string>D04BB0431921DA3C004937C7</string>
-				<string>D06047DD1935DD45006DFA1A</string>
-				<string>D04BB0221921DA23004937C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D04BB00B1921DA23004937C7</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D04BB0381921DA23004937C7</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F204D84AE2324382BDFCA84E</string>
-				<string>D04BB0081921DA23004937C7</string>
-				<string>D04BB0091921DA23004937C7</string>
-				<string>D04BB00A1921DA23004937C7</string>
-				<string>A6955475F4494EA89157985D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>GameController</string>
-			<key>productName</key>
-			<string>GameController</string>
-			<key>productReference</key>
-			<string>D04BB00C1921DA23004937C7</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>D04BB00C1921DA23004937C7</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>GameController.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D04BB00D1921DA23004937C7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D04BB00C1921DA23004937C7</string>
-				<string>D04BB0271921DA23004937C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB00E1921DA23004937C7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D04BB00F1921DA23004937C7</string>
-				<string>D04BB0111921DA23004937C7</string>
-				<string>D04BB0131921DA23004937C7</string>
-				<string>D04BB0281921DA23004937C7</string>
-				<string>709467BE73B743BDB0590EDF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB00F1921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D04BB0101921DA23004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB00F1921DA23004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB0111921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D04BB0121921DA23004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB0111921DA23004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB0131921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D04BB0141921DA23004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB0131921DA23004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB0151921DA23004937C7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D04BB01E1921DA23004937C7</string>
-				<string>D04BB01F1921DA23004937C7</string>
-				<string>D04BB03E1921DA3C004937C7</string>
-				<string>D04BB03F1921DA3C004937C7</string>
-				<string>D04BB0401921DA3C004937C7</string>
-				<string>D06047D91935DD45006DFA1A</string>
-				<string>D06047DA1935DD45006DFA1A</string>
-				<string>D06047DB1935DD45006DFA1A</string>
-				<string>D04BB0211921DA23004937C7</string>
-				<string>D04BB0161921DA23004937C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>GameController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB0161921DA23004937C7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D04BB0171921DA23004937C7</string>
-				<string>D04BB0181921DA23004937C7</string>
-				<string>D04BB01B1921DA23004937C7</string>
-				<string>D04BB01D1921DA23004937C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB0171921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>GameController-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB0181921DA23004937C7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D04BB0191921DA23004937C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB0191921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB01A1921DA23004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB0181921DA23004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB01B1921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB01C1921DA23004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB01B1921DA23004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB01D1921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>GameController-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB01E1921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB01F1921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB0201921DA23004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB01F1921DA23004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB0211921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB0221921DA23004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB0211921DA23004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB0231921DA23004937C7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D04BB0421921DA3C004937C7</string>
-				<string>D04BB0351921DA23004937C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D04BB0241921DA23004937C7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D04BB0291921DA23004937C7</string>
-				<string>D04BB02B1921DA23004937C7</string>
-				<string>D04BB02A1921DA23004937C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D04BB0251921DA23004937C7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D04BB0441921DA3C004937C7</string>
-				<string>D04BB0331921DA23004937C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D04BB0261921DA23004937C7</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D04BB03B1921DA23004937C7</string>
-			<key>buildPhases</key>
-			<array>
-				<string>D04BB0231921DA23004937C7</string>
-				<string>D04BB0241921DA23004937C7</string>
-				<string>D04BB0251921DA23004937C7</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>D04BB02D1921DA23004937C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>GameControllerTests</string>
-			<key>productName</key>
-			<string>GameControllerTests</string>
-			<key>productReference</key>
-			<string>D04BB0271921DA23004937C7</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>D04BB0271921DA23004937C7</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>GameControllerTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D04BB0281921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>D04BB0291921DA23004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB0281921DA23004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB02A1921DA23004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB00F1921DA23004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB02B1921DA23004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB0131921DA23004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB02C1921DA23004937C7</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D04BB0041921DA23004937C7</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>D04BB00B1921DA23004937C7</string>
-			<key>remoteInfo</key>
-			<string>GameController</string>
-		</dict>
-		<key>D04BB02D1921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>D04BB00B1921DA23004937C7</string>
-			<key>targetProxy</key>
-			<string>D04BB02C1921DA23004937C7</string>
-		</dict>
-		<key>D04BB02E1921DA23004937C7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D04BB0341921DA23004937C7</string>
-				<string>D04BB02F1921DA23004937C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>GameControllerTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB02F1921DA23004937C7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D04BB0301921DA23004937C7</string>
-				<string>D04BB0311921DA23004937C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB0301921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>GameControllerTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB0311921DA23004937C7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D04BB0321921DA23004937C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB0321921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB0331921DA23004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB0311921DA23004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB0341921DA23004937C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>GameControllerTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB0351921DA23004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB0341921DA23004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB0361921DA23004937C7</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D04BB0371921DA23004937C7</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D04BB0381921DA23004937C7</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D04BB0391921DA23004937C7</string>
-				<string>D04BB03A1921DA23004937C7</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D04BB0391921DA23004937C7</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>596C4563A247456FB167B2A4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>GameController/GameController-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>GameController/GameController-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string>30676143-7B2A-4C30-951A-BC9BF6550834</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D04BB03A1921DA23004937C7</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>596C4563A247456FB167B2A4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>GameController/GameController-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>GameController/GameController-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string>C5224B53-4E01-4219-8215-8DC6A7AB6780</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D04BB03B1921DA23004937C7</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D04BB03C1921DA23004937C7</string>
-				<string>D04BB03D1921DA23004937C7</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D04BB03C1921DA23004937C7</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/GameController.app/GameController</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>GameController/GameController-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>GameControllerTests/GameControllerTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D04BB03D1921DA23004937C7</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/GameController.app/GameController</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>GameController/GameController-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>GameControllerTests/GameControllerTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D04BB03E1921DA3C004937C7</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>GameControllerViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB03F1921DA3C004937C7</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>GameControllerViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB0401921DA3C004937C7</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>GameControllerViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D04BB0411921DA3C004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB03F1921DA3C004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB0421921DA3C004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB03F1921DA3C004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB0431921DA3C004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB0401921DA3C004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D04BB0441921DA3C004937C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D04BB0401921DA3C004937C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D06047D91935DD45006DFA1A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>InfoViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D06047DA1935DD45006DFA1A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>InfoViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D06047DB1935DD45006DFA1A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>InfoViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D06047DC1935DD45006DFA1A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D06047DA1935DD45006DFA1A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D06047DD1935DD45006DFA1A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D06047DB1935DD45006DFA1A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DBB8109470AA4D9B814228C8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>709467BE73B743BDB0590EDF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F204D84AE2324382BDFCA84E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D04BB0041921DA23004937C7</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D04BB0101921DA23004937C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04BB00F1921DA23004937C7 /* Foundation.framework */; };
+		D04BB0121921DA23004937C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04BB0111921DA23004937C7 /* CoreGraphics.framework */; };
+		D04BB0141921DA23004937C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04BB0131921DA23004937C7 /* UIKit.framework */; };
+		D04BB01A1921DA23004937C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D04BB0181921DA23004937C7 /* InfoPlist.strings */; };
+		D04BB01C1921DA23004937C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D04BB01B1921DA23004937C7 /* main.m */; };
+		D04BB0201921DA23004937C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D04BB01F1921DA23004937C7 /* AppDelegate.m */; };
+		D04BB0221921DA23004937C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D04BB0211921DA23004937C7 /* Images.xcassets */; };
+		D04BB0291921DA23004937C7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04BB0281921DA23004937C7 /* XCTest.framework */; };
+		D04BB02A1921DA23004937C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04BB00F1921DA23004937C7 /* Foundation.framework */; };
+		D04BB02B1921DA23004937C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04BB0131921DA23004937C7 /* UIKit.framework */; };
+		D04BB0331921DA23004937C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D04BB0311921DA23004937C7 /* InfoPlist.strings */; };
+		D04BB0351921DA23004937C7 /* GameControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D04BB0341921DA23004937C7 /* GameControllerTests.m */; };
+		D04BB0411921DA3C004937C7 /* GameControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04BB03F1921DA3C004937C7 /* GameControllerViewController.m */; };
+		D04BB0421921DA3C004937C7 /* GameControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04BB03F1921DA3C004937C7 /* GameControllerViewController.m */; };
+		D04BB0431921DA3C004937C7 /* GameControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */; };
+		D04BB0441921DA3C004937C7 /* GameControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */; };
+		D06047DC1935DD45006DFA1A /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06047DA1935DD45006DFA1A /* InfoViewController.m */; };
+		D06047DD1935DD45006DFA1A /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D06047DB1935DD45006DFA1A /* InfoViewController.xib */; };
+		D0ADA3C9195D4D6100F4CD04 /* GameControllerViewController_35.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0ADA3C8195D4D6100F4CD04 /* GameControllerViewController_35.xib */; };
+		D0FE8BAF193727AB00E85023 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0FE8BAE193727AB00E85023 /* Settings.bundle */; };
+		DBB8109470AA4D9B814228C8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 709467BE73B743BDB0590EDF /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D04BB02C1921DA23004937C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D04BB0041921DA23004937C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D04BB00B1921DA23004937C7;
+			remoteInfo = GameController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		596C4563A247456FB167B2A4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		709467BE73B743BDB0590EDF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04BB00C1921DA23004937C7 /* GameController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04BB00F1921DA23004937C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D04BB0111921DA23004937C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D04BB0131921DA23004937C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D04BB0171921DA23004937C7 /* GameController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameController-Info.plist"; sourceTree = "<group>"; };
+		D04BB0191921DA23004937C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D04BB01B1921DA23004937C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D04BB01D1921DA23004937C7 /* GameController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GameController-Prefix.pch"; sourceTree = "<group>"; };
+		D04BB01E1921DA23004937C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D04BB01F1921DA23004937C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D04BB0211921DA23004937C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D04BB0271921DA23004937C7 /* GameControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04BB0281921DA23004937C7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D04BB0301921DA23004937C7 /* GameControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameControllerTests-Info.plist"; sourceTree = "<group>"; };
+		D04BB0321921DA23004937C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D04BB0341921DA23004937C7 /* GameControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameControllerTests.m; sourceTree = "<group>"; };
+		D04BB03E1921DA3C004937C7 /* GameControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameControllerViewController.h; sourceTree = "<group>"; };
+		D04BB03F1921DA3C004937C7 /* GameControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameControllerViewController.m; sourceTree = "<group>"; };
+		D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameControllerViewController.xib; sourceTree = "<group>"; };
+		D06047D91935DD45006DFA1A /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		D06047DA1935DD45006DFA1A /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		D06047DB1935DD45006DFA1A /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		D0ADA3C8195D4D6100F4CD04 /* GameControllerViewController_35.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameControllerViewController_35.xib; sourceTree = "<group>"; };
+		D0FE8BAE193727AB00E85023 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D04BB0091921DA23004937C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04BB0121921DA23004937C7 /* CoreGraphics.framework in Frameworks */,
+				D04BB0141921DA23004937C7 /* UIKit.framework in Frameworks */,
+				D04BB0101921DA23004937C7 /* Foundation.framework in Frameworks */,
+				DBB8109470AA4D9B814228C8 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04BB0241921DA23004937C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04BB0291921DA23004937C7 /* XCTest.framework in Frameworks */,
+				D04BB02B1921DA23004937C7 /* UIKit.framework in Frameworks */,
+				D04BB02A1921DA23004937C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D03BB772196CE9FE00534EF8 /* GamerController */ = {
+			isa = PBXGroup;
+			children = (
+				D04BB03E1921DA3C004937C7 /* GameControllerViewController.h */,
+				D04BB03F1921DA3C004937C7 /* GameControllerViewController.m */,
+				D04BB0401921DA3C004937C7 /* GameControllerViewController.xib */,
+				D0ADA3C8195D4D6100F4CD04 /* GameControllerViewController_35.xib */,
+			);
+			name = GamerController;
+			sourceTree = "<group>";
+		};
+		D04BB0031921DA23004937C7 = {
+			isa = PBXGroup;
+			children = (
+				D04BB0151921DA23004937C7 /* GameController */,
+				D04BB02E1921DA23004937C7 /* GameControllerTests */,
+				D04BB00E1921DA23004937C7 /* Frameworks */,
+				D04BB00D1921DA23004937C7 /* Products */,
+				596C4563A247456FB167B2A4 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		D04BB00D1921DA23004937C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D04BB00C1921DA23004937C7 /* GameController.app */,
+				D04BB0271921DA23004937C7 /* GameControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D04BB00E1921DA23004937C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D04BB00F1921DA23004937C7 /* Foundation.framework */,
+				D04BB0111921DA23004937C7 /* CoreGraphics.framework */,
+				D04BB0131921DA23004937C7 /* UIKit.framework */,
+				D04BB0281921DA23004937C7 /* XCTest.framework */,
+				709467BE73B743BDB0590EDF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D04BB0151921DA23004937C7 /* GameController */ = {
+			isa = PBXGroup;
+			children = (
+				D04BB01E1921DA23004937C7 /* AppDelegate.h */,
+				D04BB01F1921DA23004937C7 /* AppDelegate.m */,
+				D03BB772196CE9FE00534EF8 /* GamerController */,
+				D06047D91935DD45006DFA1A /* InfoViewController.h */,
+				D06047DA1935DD45006DFA1A /* InfoViewController.m */,
+				D06047DB1935DD45006DFA1A /* InfoViewController.xib */,
+				D04BB0211921DA23004937C7 /* Images.xcassets */,
+				D04BB0161921DA23004937C7 /* Supporting Files */,
+			);
+			path = GameController;
+			sourceTree = "<group>";
+		};
+		D04BB0161921DA23004937C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0FE8BAE193727AB00E85023 /* Settings.bundle */,
+				D04BB0171921DA23004937C7 /* GameController-Info.plist */,
+				D04BB0181921DA23004937C7 /* InfoPlist.strings */,
+				D04BB01B1921DA23004937C7 /* main.m */,
+				D04BB01D1921DA23004937C7 /* GameController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D04BB02E1921DA23004937C7 /* GameControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D04BB0341921DA23004937C7 /* GameControllerTests.m */,
+				D04BB02F1921DA23004937C7 /* Supporting Files */,
+			);
+			path = GameControllerTests;
+			sourceTree = "<group>";
+		};
+		D04BB02F1921DA23004937C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D04BB0301921DA23004937C7 /* GameControllerTests-Info.plist */,
+				D04BB0311921DA23004937C7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D04BB00B1921DA23004937C7 /* GameController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D04BB0381921DA23004937C7 /* Build configuration list for PBXNativeTarget "GameController" */;
+			buildPhases = (
+				F204D84AE2324382BDFCA84E /* Check Pods Manifest.lock */,
+				D04BB0081921DA23004937C7 /* Sources */,
+				D04BB0091921DA23004937C7 /* Frameworks */,
+				D04BB00A1921DA23004937C7 /* Resources */,
+				A6955475F4494EA89157985D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameController;
+			productName = GameController;
+			productReference = D04BB00C1921DA23004937C7 /* GameController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D04BB0261921DA23004937C7 /* GameControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D04BB03B1921DA23004937C7 /* Build configuration list for PBXNativeTarget "GameControllerTests" */;
+			buildPhases = (
+				D04BB0231921DA23004937C7 /* Sources */,
+				D04BB0241921DA23004937C7 /* Frameworks */,
+				D04BB0251921DA23004937C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D04BB02D1921DA23004937C7 /* PBXTargetDependency */,
+			);
+			name = GameControllerTests;
+			productName = GameControllerTests;
+			productReference = D04BB0271921DA23004937C7 /* GameControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D04BB0041921DA23004937C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Peterlee;
+				TargetAttributes = {
+					D04BB00B1921DA23004937C7 = {
+						DevelopmentTeam = AWP2538424;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+						};
+					};
+					D04BB0261921DA23004937C7 = {
+						TestTargetID = D04BB00B1921DA23004937C7;
+					};
+				};
+			};
+			buildConfigurationList = D04BB0071921DA23004937C7 /* Build configuration list for PBXProject "GameController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D04BB0031921DA23004937C7;
+			productRefGroup = D04BB00D1921DA23004937C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D04BB00B1921DA23004937C7 /* GameController */,
+				D04BB0261921DA23004937C7 /* GameControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D04BB00A1921DA23004937C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04BB01A1921DA23004937C7 /* InfoPlist.strings in Resources */,
+				D04BB0431921DA3C004937C7 /* GameControllerViewController.xib in Resources */,
+				D0ADA3C9195D4D6100F4CD04 /* GameControllerViewController_35.xib in Resources */,
+				D0FE8BAF193727AB00E85023 /* Settings.bundle in Resources */,
+				D06047DD1935DD45006DFA1A /* InfoViewController.xib in Resources */,
+				D04BB0221921DA23004937C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04BB0251921DA23004937C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04BB0441921DA3C004937C7 /* GameControllerViewController.xib in Resources */,
+				D04BB0331921DA23004937C7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6955475F4494EA89157985D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F204D84AE2324382BDFCA84E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D04BB0081921DA23004937C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04BB0411921DA3C004937C7 /* GameControllerViewController.m in Sources */,
+				D04BB0201921DA23004937C7 /* AppDelegate.m in Sources */,
+				D06047DC1935DD45006DFA1A /* InfoViewController.m in Sources */,
+				D04BB01C1921DA23004937C7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04BB0231921DA23004937C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04BB0421921DA3C004937C7 /* GameControllerViewController.m in Sources */,
+				D04BB0351921DA23004937C7 /* GameControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D04BB02D1921DA23004937C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D04BB00B1921DA23004937C7 /* GameController */;
+			targetProxy = D04BB02C1921DA23004937C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D04BB0181921DA23004937C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D04BB0191921DA23004937C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D04BB0311921DA23004937C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D04BB0321921DA23004937C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D04BB0361921DA23004937C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D04BB0371921DA23004937C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D04BB0391921DA23004937C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 596C4563A247456FB167B2A4 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameController/GameController-Prefix.pch";
+				INFOPLIST_FILE = "GameController/GameController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D04BB03A1921DA23004937C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 596C4563A247456FB167B2A4 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameController/GameController-Prefix.pch";
+				INFOPLIST_FILE = "GameController/GameController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D04BB03C1921DA23004937C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameController.app/GameController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameController/GameController-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GameControllerTests/GameControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D04BB03D1921DA23004937C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameController.app/GameController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameController/GameController-Prefix.pch";
+				INFOPLIST_FILE = "GameControllerTests/GameControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D04BB0071921DA23004937C7 /* Build configuration list for PBXProject "GameController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04BB0361921DA23004937C7 /* Debug */,
+				D04BB0371921DA23004937C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D04BB0381921DA23004937C7 /* Build configuration list for PBXNativeTarget "GameController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04BB0391921DA23004937C7 /* Debug */,
+				D04BB03A1921DA23004937C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D04BB03B1921DA23004937C7 /* Build configuration list for PBXNativeTarget "GameControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04BB03C1921DA23004937C7 /* Debug */,
+				D04BB03D1921DA23004937C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D04BB0041921DA23004937C7 /* Project object */;
+}
