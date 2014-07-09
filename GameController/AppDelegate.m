@@ -16,7 +16,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     GameControllerViewController *gameControllerVC=[[GameControllerViewController alloc] initWithNibName:@"GameControllerViewController" bundle:nil];
 
-    
     self.window.rootViewController=gameControllerVC;
     
     // Override point for customization after application launch.

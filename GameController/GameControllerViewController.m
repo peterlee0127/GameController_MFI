@@ -51,7 +51,7 @@
     waitLabel.textAlignment=NSTextAlignmentLeft;
     waitLabel.userInteractionEnabled=NO;
     waitLabel.backgroundColor=[UIColor clearColor];
-    waitLabel.text=@"Loading your controller Information, it will take 30 seconds.\n(please ensure already connect game controller)";
+    waitLabel.text=@"Loading your controller Information,it will take few seconds.\n(please ensure already connected to MFi Controller)";
     waitLabel.font=[UIFont fontWithName:@"Helvetica" size:24];
     [self.activityAlertView addSubview:waitLabel];
     
@@ -75,10 +75,15 @@
     // Determine the state of the peripheral
     if ([central state] == CBCentralManagerStatePoweredOff) {
         NSLog(@"CoreBluetooth BLE hardware is powered off");
+        UIAlertView *notPoweredOn = [[UIAlertView alloc] initWithTitle:@"Please Ensure your Bluetooth is On" message:@"" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [notPoweredOn show];
     }
     else if ([central state] == CBCentralManagerStatePoweredOn) {
         NSLog(@"CoreBluetooth BLE hardware is powered on and ready");
 //        [central scanForPeripheralsWithServices:nil options:nil];
+        UIAlertView *notPoweredOn = [[UIAlertView alloc] initWithTitle:@"BLE hardware is powered on and ready, now scanning" message:@"" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        
+        [notPoweredOn show];
     }
     else if ([central state] == CBCentralManagerStateUnauthorized) {
         NSLog(@"CoreBluetooth BLE state is unauthorized");
@@ -88,6 +93,8 @@
     }
     else if ([central state] == CBCentralManagerStateUnsupported) {
         NSLog(@"CoreBluetooth BLE hardware is unsupported on this platform");
+        UIAlertView *notPoweredOn = [[UIAlertView alloc] initWithTitle:@"BLE hardware is unsupported on this platform" message:@"" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [notPoweredOn show];
     }
 }
 -(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
