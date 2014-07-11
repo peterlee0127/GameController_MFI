@@ -1,5 +1,7 @@
 <h1>GameController (MFi) iOS 7 or later.</h1>
 
+<a href="https://itunes.apple.com/us/app/gamercontroller/id893820128?ls=1&mt=8">https://itunes.apple.com/us/app/gamercontroller/id893820128?ls=1&mt=8</a>
+
 <h3>Currnent only test wireless SteelSeries GameController.</h3>
 
 <hr>
