@@ -235,7 +235,7 @@
 						DevelopmentTeam = AWP2538424;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.GameCenter = {
 								enabled = 0;
